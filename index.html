@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Wildlife Conservation</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-2 sticky-top">
+    <a class="navbar-brand" href="#">
+      <img src="./img/logo1.jpg" width="40px" height="40px" alt="" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active px-4">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="parks.html">Parks</a>
+        </li>
+        <li class="nav-item px-4">
+          <a class="nav-link" href="sanctuaries.html">Sanctuaries</a>
+        </li>
+        <!-- <li class="nav-item px-4">
+          <a class="nav-link" href="#">Reserves</a>
+        </li> -->
+        <li class="nav-item px-4">
+          <a class="nav-link" href="about.html">About Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="bd-example">
+    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+        <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active ">
+          <img src="./img/dear.jpg" class="d-block w-100 dashboard-img" alt="...">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5>What is a National Park?..</h5>
+            <p class="pb-2">“National Parks are the areas that are set by the government to conserve the natural
+              environment.National parks are areas that aim to protect the natural environment. They are also involved
+              in public recreation and enjoyment activities. In a national park, the landscapes and...”</p>
+            <button onclick="mypark()" type="button" class="btn btn-secondary">Read More...</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/golden eagle.jpg
+          " class="d-block w-100 dashboard-img" alt="...">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5>What are Sanctuaries?..</h5>
+            <p class="pb-2">“Sanctuary is a place of refuge where injured, abandoned and abused wildlife is allowed to
+              live in peace in their natural environment without any human intervention.Sanctuaries are naturally
+              occurring areas that are meant to protect the endangered species from...</p>
+            <button onclick="mysanctuary()" type="button" class="btn btn-secondary">Read More...</button>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="./img/elephant_slider.jpg " class="d-block w-100 dashboard-img" alt="...">
+          <div class="carousel-caption d-none d-md-block mb-5">
+            <h5>What are Reserves?...</h5>
+            <p class="pb-2">Nature reserve, area set aside for the purpose of preserving certain animals, plants, or
+              both.A nature reserve differs from a national park usually in being smaller and having as its sole purpose
+              the protection of nature.Endangered species are often kept in reserves, away from...</p>
+            <button onclick="myreserve()" type="button" class="btn btn-secondary">Read More...</button>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+
+
+  <div class="card text-center ">
+    <div class="card-body">
+      <h5 class="card-title">Lets now unite to save wildlife</h5>
+      <p class="card-text">To know more about the Wildlife of India please Visit...</p>
+      <a href="https://www.india.gov.in/topics/environment-forest/wildlife" class="btn btn-outline-light rounded"
+        target="_blank">Click Here</a>
+    </div>
+
+    <footer class="foot">
+      <div class="text-center p-3" style="background-color: rgba(7, 4, 4, 0.2);">
+        © 2022 Copyright:
+
+        <a class="text-dark px-4" href="https://www.worldwildlife.org/">https://www.worldwildlife.org/</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
