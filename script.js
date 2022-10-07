@@ -1,10 +1,12 @@
-// $('.carousel').carousel({
-//     interval: 2000
-//   })
 
-// document.getElementById("myButton").onclick = function () {
-//     location.href = "https://en.wikipedia.org/wiki/National_park";
-// };
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 
 function mypark() {
     window.open(
